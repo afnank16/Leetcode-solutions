@@ -10,5 +10,6 @@ var removeElement = function(nums, val) {
     }
     return count
 };
-a=[3,2,2,3];
-val=3
+let a=[3,2,2,3];
+let val=3
+console.log(a,val)
