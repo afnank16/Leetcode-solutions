@@ -12,4 +12,4 @@ var removeElement = function(nums, val) {
 };
 let a=[3,2,2,3];
 let val=3
-console.log(a,val)
+console.log(removeElement(a,val))
