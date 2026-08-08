@@ -10,13 +10,16 @@ const romanValues = {
 var romanToInt = function(s) {
     let total = 0;
 
-    for (let i = 0; i < s.length; i++) {
-        if (romanValues[s[i]] < romanValues[s[i + 1]]) {
-            total -= romanValues[s[i]];
-        } else {
-            total += romanValues[s[i]];
+    for(let i=0; i<s.length; i++){
+      
+        if(romanValues[s[i+1]]>romanValues[s[i]]){
+            total=total-romanValues[s[i]];
+        }
+        else{
+            total=total+romanValues[s[i]];
         }
     }
-
     return total;
 };
+let result=romanToInt("LVIII")
+console.log(result)
