@@ -2,8 +2,8 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var permute = function(nums) {
-     let result = [];
+var permute = function (nums) {
+    let result = [];
 
     function backtrack(current, remaining) {
         if (remaining.length === 0) {
